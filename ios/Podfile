@@ -1,0 +1,85 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/react-native-unimodules/cocoapods.rb'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+source 'https://github.com/Banuba/specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+
+target 'memee' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config["reactNativePath"],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+  
+  pod 'react-native-twitter-signin', :path => '../node_modules/react-native-twitter-signin'
+
+  pod 'BanubaARCloudSDK', '1.23.0' #optional
+  pod 'BanubaVideoEditorSDK', '1.23.0'
+  pod 'BanubaAudioBrowserSDK', '1.23.0' #optional
+  pod 'BanubaMusicEditorSDK', '1.23.0'
+  pod 'BanubaOverlayEditorSDK', '1.23.0'
+  pod 'BanubaEffectPlayer', '1.23.0' #optional
+  pod 'BanubaSDK', '1.23.0' #optional
+  pod 'BanubaSDKSimple', '1.23.0'
+  pod 'BanubaSDKServicing', '1.23.0'
+  pod 'VideoEditor', '1.23.0'
+  pod 'BanubaUtilities', '1.23.0'
+  pod 'BanubaVideoEditorGallerySDK', '1.23.0' #optional
+  pod 'BanubaLicenseServicingSDK', '1.23.0'
+  pod 'BanubaVideoEditorTrimSDK', '1.23.0'
+  # pod 'BanubaTokenStorageSDK', '1.23.0' #optional
+
+  pod 'BNBLicenseUtils', '1.22.1'
+
+  pod 'VEExportSDK', '1.23.0'
+  pod 'VEEffectsSDK', '1.23.0'
+  pod 'VEPlaybackSDK', '1.23.0'
+
+  # target 'memeeTests' do
+  #   inherit! :complete
+    # Pods for testing
+  # end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  # use_flipper!()
+
+  # post_install do |installer|
+  #   react_native_post_install(installer)
+  # end
+  # use_flipper!()
+
+  # post_install do |installer|
+  #   react_native_post_install(installer)
+
+  #   # Apple Silicon builds require a library path tweak for Swift library discovery or "symbol not found" for swift things
+  #   installer.aggregate_targets.each do |aggregate_target| 
+  #     aggregate_target.user_project.native_targets.each do |target|
+  #       target.build_configurations.each do |config|
+  #         config.build_settings['LIBRARY_SEARCH_PATHS'] = ['$(SDKROOT)/usr/lib/swift', '$(inherited)']
+  #       end
+  #     end
+  #     aggregate_target.user_project.save
+  #   end
+
+  #    # Flipper requires a crude patch to bump up iOS deployment target, or "error: thread-local storage is not supported for the current target"
+  #   # I'm not aware of any other way to fix this one other than bumping iOS deployment target to match react-native (iOS 11 now)
+  #   installer.pods_project.targets.each do |target|
+  #     target.build_configurations.each do |config|
+  #       config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
+  #      end
+  #   end
+
+  #   # ...but if you bump iOS deployment target, Flipper barfs again "Time.h:52:17: error: typedef redefinition with different types"
+  #   # We need to make one crude patch to RCT-Folly - set `__IPHONE_10_0` to our iOS target + 1
+  #   # https://github.com/facebook/flipper/issues/834 - 84 comments and still going...
+  #   `sed -i -e  $'s/__IPHONE_10_0/__IPHONE_12_0/' Pods/RCT-Folly/folly/portability/Time.h`
+  # end
+end

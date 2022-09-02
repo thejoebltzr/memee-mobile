@@ -1,0 +1,23 @@
+export const colors = {
+    textColor: 'white',
+    backgroundColor: '#15152E',
+    nextArrowColor: 'white',
+    nextButtonBackgroundColor: '#78C801',
+    nextButtonBackgroundColor1: '#6951F8',
+    splashBottomLargeLineColor: '#78C801',
+    splashBottomSmallLineColor: '#646182',
+    inputBackground: '#33334D',
+    placeholderColor: '#7B7B8B',
+    inputTextColor: '#FFFFFF',
+    buttonBackground: '#6951F8',
+    keyboardBackground: '#D6D8DB',
+    notificationIcon: '#FF0000',
+    bottomTabsBackgroundColor: '#101029',
+    logoutButtonBackground: '#2E2E4A',
+    carMatchBotom: '#1E1E39',
+    eventDateColor: "black",
+    eventViewButton: "rgba(0,0,0,0.3)",
+    bottomSheetColor: "#33334C",
+    strokeColor: "#6951F8",
+    sheetPointsColor: "#4E4E6C"
+}

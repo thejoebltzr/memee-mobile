@@ -1,0 +1,41 @@
+{
+  "editor": {
+    "minVideoDuration": 1500,
+    "maxVideoDuration": 60000,
+    "maxMediaSources": 50,
+    "supportsTimeEffects": true,
+    "supportsVisualEffects": true,
+    "supportsMusicMixer": true,
+    "supportsTextOnVideo": true,
+    "banubaColorEffectsAssetsPath": "luts",
+    "textOnVideoMaxSymbols": -1,
+    "supportsEditorLinkOnVideo": false,
+    "stickersApiKey":"6nimTERe22sg0iA3Jh0JFDe3mA4gHFF0" ,
+    "showConfig": false,
+    "supportsTrimRecordedVideo": true,
+    "interactions": {
+      "question": false,
+      "quiz": false,
+      "interest": false,
+      "poll": false,
+      "linkOnVideo": false
+    }
+  },
+  "trimmer": {
+    "minSourceVideoDuration": 300,
+    "supportsMultiChoice": true,
+    "appearanceThreshold": 0,
+    "supportsRotation": true,
+    "actionVibrationDurationMs": 3,
+    "oneScreenDurationMs": 10000
+  },
+  "slideshow": {
+    "animate": true,
+    "animateTakenPhotos": true,
+    "slideShowSourceDurationMs": 3000
+  },
+  "gallery": {
+    "supportsVideo": true,
+    "supportsImage": true
+  }
+}

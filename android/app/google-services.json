@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "422086856195",
+    "firebase_url": "https://memee-f9aca-default-rtdb.firebaseio.com",
+    "project_id": "memee-f9aca",
+    "storage_bucket": "memee-f9aca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422086856195:android:4616fa19f57af561b58836",
+        "android_client_info": {
+          "package_name": "com.convrtx.memee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422086856195-o0d8s6i94tirkqc8cks1kqmovgiv28ad.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.convrtx.memee",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "422086856195-74rah09f8pvu1vl14n4cd76h679obcrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB17JnQEbaD5eu62zcB4f-5KBlOb0VTh_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "422086856195-74rah09f8pvu1vl14n4cd76h679obcrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
